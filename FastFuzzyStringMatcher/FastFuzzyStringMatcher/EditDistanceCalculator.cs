@@ -67,8 +67,8 @@ namespace FastFuzzyStringMatcher
 
                 for (int colIndex = 1; colIndex < rowLength; colIndex++)
                 {
-                    char str1Char = Char.ToLower(str1[colIndex - 1]);
-                    char str2Char = Char.ToLower(str2[rowIndex - 1]);
+                    char str1Char = str1[colIndex - 1];
+                    char str2Char = str2[rowIndex - 1];
 
                     int swapCharsCost = (str1Char == str2Char) ? 0 : 1;
 
